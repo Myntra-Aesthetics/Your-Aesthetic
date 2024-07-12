@@ -1,0 +1,114 @@
+/* src/quiz.css */
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asul:wght@400;700&display=swap');
+body {
+  margin: 0;
+  font-family: 'Island Moments', cursive; /* Apply Island Moments font to the body */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+ }
+ 
+ .quiz-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background-color: white;
+   padding: 20px;
+   border-bottom: 1px solid #eaeaea;
+   width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+ }
+ 
+ .header {
+   text-align: center;
+   font-size: 2rem;
+   color: #ff69b4;
+   font-size: 4rem;
+  background: linear-gradient(to right, #F419B0, #FE902F);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin:60px 0 0 0;
+  font-family: 'Island Moments', cursive;
+ }
+
+ .question {
+  font-size: 2rem;
+  background: linear-gradient(to right, #F419B0, #FE902F);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: 'Island Moments', cursive; 
+ }
+ 
+ .options-container {
+  display: flex;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 20px;
+  background-color: rgba(224, 184, 107, 0.09); /* E0B86B with 9% opacity */
+  border: 2px solid #EAD1A1; /* Stroke color */
+  border-radius: 10px;
+ }
+ 
+ .option {
+   display: flex;
+   flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  font-family: 'Asul';
+ }
+ 
+ .option img {
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   object-fit: cover;
+   margin-bottom: 10px;
+ }
+ 
+ .option span {
+   font-size: 1rem;
+   text-align: center;
+ }
+ 
+ .next-button {
+   margin-top: 20px;
+   padding: 10px 20px;
+   font-size: 1rem;
+   cursor: pointer;
+   border: none;
+   background-color: #ff69b4;
+   color: white;
+   border-radius: 5px;
+   transition: background-color 0.3s;
+ }
+ 
+ .next-button:hover {
+   background-color: #ff1493;
+ }
+ 
+ .results-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+   min-height: 100vh;
+   box-sizing: border-box;
+ }
+ 
+ .result-style {
+   margin: 10px;
+   font-size: 1.25rem;
+   font-weight: bold;
+   text-align: center;
+ }
+
+
+

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import logo from "./Assets/Myntra.png";
 import vintage from "./Assets/Images/Vintage.jpg";
@@ -7,9 +7,17 @@ import fairyCore from "./Assets/Images/FairyCore.jpg";
 import y2k from "./Assets/Images/Y2K.jpg";
 import desi from "./Assets/Images/Desi.jpg";
 import goth from "./Assets/Images/Goth.jpg";
+import boho from "./Assets/Images/Boho.jpg";
+import chic from "./Assets/Images/Chic.jpg";
 import { Link } from "react-router-dom";
 
 function App() {
+  const [showMore, setShowMore] = useState(false);
+
+  const handleViewMore = () => {
+    setShowMore(!showMore);
+  };
+
   return (
     <div className="App">
       <header className="App-header">
@@ -69,8 +77,27 @@ function App() {
           <span>Goth</span>
         </div>
         </a>
+        {showMore && (
+          <>
+            {/* Add your additional styles here */}
+            <a href="https://www.myntra.com/boho" target="_blank" rel="noopener noreferrer" className="no-underline">
+              <div className="style-option">
+                <img src={boho} alt="Boho" />
+                <span>Boho</span>
+              </div>
+            </a>
+            <a href="https://www.myntra.com/chic" target="_blank" rel="noopener noreferrer" className="no-underline">
+              <div className="style-option">
+                <img src={chic} alt="Chic" />
+                <span>Chic</span>
+              </div>
+            </a>
+          </>
+        )}
       </div>
-      <button className="view-more">View More</button>
+      <button className="view-more" onClick={handleViewMore}>
+        {showMore ? "View Less" : "View More"}
+      </button>
       <footer>
         <p>Not sure what your style is?</p>
         <Link to="/quiz" basename="/">

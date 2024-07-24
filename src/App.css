@@ -109,8 +109,8 @@ a.no-underline {
 .view-more {
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: white;
-  border: 1px solid #333;
+  background-color: #f8edd8;
+  border: 2px solid #EAD1A1;
   border-radius: 20px;
   cursor: pointer;
   transition: background-color 0.3s;

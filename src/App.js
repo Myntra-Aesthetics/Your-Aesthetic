@@ -59,34 +59,59 @@ function App() {
             <span>FairyCore</span>
           </div>
         </a>
-        <a href="https://www.myntra.com/y2k" target="_blank" rel="noopener noreferrer" className="no-underline">
+        <a
+          href="https://www.myntra.com/y2k"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="no-underline"
+        >
           <div className="style-option">
             <img src={y2k} alt="Y2K" />
             <span>Y2K</span>
           </div>
         </a>
-        <a href="https://www.myntra.com/indianwearwomen" target="_blank" rel="noopener noreferrer" className="no-underline">
-        <div className="style-option">
-          <img src={desi} alt="Desi" />
-          <span>Desi</span>
-        </div>
+        <a
+          href="https://www.myntra.com/indianwearwomen"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="no-underline"
+        >
+          <div className="style-option">
+            <img src={desi} alt="Desi" />
+            <span>Desi</span>
+          </div>
         </a>
-        <a href="https://www.myntra.com/blackpartydress" target="_blank" rel="noopener noreferrer" className="no-underline">
-        <div className="style-option">
-          <img src={goth} alt="Goth" />
-          <span>Goth</span>
-        </div>
+        <a
+          href="https://www.myntra.com/blackpartydress"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="no-underline"
+        >
+          <div className="style-option">
+            <img src={goth} alt="Goth" />
+            <span>Goth</span>
+          </div>
         </a>
         {showMore && (
           <>
             {/* Add your additional styles here */}
-            <a href="https://www.myntra.com/boho" target="_blank" rel="noopener noreferrer" className="no-underline">
+            <a
+              href="https://www.myntra.com/boho"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="no-underline"
+            >
               <div className="style-option">
                 <img src={boho} alt="Boho" />
                 <span>Boho</span>
               </div>
             </a>
-            <a href="https://www.myntra.com/chic" target="_blank" rel="noopener noreferrer" className="no-underline">
+            <a
+              href="https://www.myntra.com/chic"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="no-underline"
+            >
               <div className="style-option">
                 <img src={chic} alt="Chic" />
                 <span>Chic</span>
@@ -95,10 +120,10 @@ function App() {
           </>
         )}
       </div>
-      <button className="view-more" onClick={handleViewMore}>
-        {showMore ? "View Less" : "View More"}
-      </button>
       <footer>
+        <button className="view-more" onClick={handleViewMore}>
+          {showMore ? "View Less" : "View More"}
+        </button>
         <p>Not sure what your style is?</p>
         <Link to="/quiz" basename="/">
           <a href="#quiz">Let’s find out</a>

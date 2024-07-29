@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import './Results.css';
+import { Link } from "react-router-dom";
 
 // Desi images
 import desi1 from '../Assets/Desi-1.jpg';
@@ -152,6 +153,11 @@ const Results = () => {
           </div>
         ))}
       </div>
+      <div className='backToHome'>
+      <Link to="/app" basename="/">
+          <a href="#app">Didn't like the fits? Choose one yourself</a>
+        </Link>
+        </div>
     </div>
   );
 };

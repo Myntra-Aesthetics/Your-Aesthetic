@@ -11,6 +11,7 @@ const AppRouter = () => {
         <Route exact path="/" element={<App />} />
         <Route path="/quiz" element={<Quiz />} />
         <Route path="/results" element={<Results />} />
+        <Route path="/App" element={<App />} />
         </Routes>
     </Router>
   );

@@ -22,7 +22,7 @@
   color: transparent;
     font-size: 3rem;
     margin: 0;
-    animation: slideInFromLeft 1s ease-out;
+    animation: slideInFromLeft 2s ease-out;
   }
   
   h2 {
@@ -33,7 +33,7 @@
     font-size: 4rem;
     margin: 0;
     margin-bottom: 20px;
-    animation: slideInFromRight 1s ease-out;
+    animation: slideInFromRight 2s ease-out;
   }
 
   @keyframes slideInFromLeft {
